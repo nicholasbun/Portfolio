@@ -1,0 +1,189 @@
+.navbar{
+  position: fixed;
+}
+
+/* DESKOP NAV */
+.navbardeskop{
+  background-color: var(--navbar-bg-light);
+  transition: background-color 0.3s ease;
+}
+.navbardeskop.dark-theme{
+  background-color: var(--navbar-bg-dark);
+}
+
+
+.navbardeskop.scrolled{
+  backdrop-filter: blur(100px);
+  top: 0;
+}
+.navbardeskop.hidden{
+  top: -200px;
+}
+
+.containernav{
+  position: fixed;
+  width: 100%;
+ z-index: 1000;
+ left: 0;
+ right: 0;
+}
+
+
+.navbardeskop {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  justify-content: space-evenly;
+  align-items: center; 
+  height: 70px;
+  width: 100%;
+     transition: background-color 0.3s ease, top 0.3s ease;
+  }
+
+  /* MOBILE NAV */
+.mobilenav{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+.mobileMenu{
+  display: none;
+  position: fixed;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.mobileMenu.active{
+  display: block;
+  transform: translateY(0);
+}
+
+
+  .themeMode:hover{
+    transform: scale(1.05); 
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .logoContainer {    
+    img{
+        width: 80px;
+    }
+  }
+  .logoContainer:hover{
+    cursor: pointer;
+  }
+    
+  .linkList {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-weight: 1000;
+    gap: 5rem;
+     }
+     .linkList a {
+       text-decoration: none; 
+     }
+  .linkList a:hover {
+    text-decoration: underline;
+    color: #ff8c00;
+    transition: 0.5s;
+  }
+  
+  
+  .contactbtn {
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+border-radius: 50px;
+padding: 20px 40px;
+height: 45px;
+width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    a{
+      text-decoration: none;
+      font-weight: 1000;
+      color: var(--btn-txt-color);
+    } 
+  }
+  
+  .contactbtn:hover {
+transform: scale(1.05);
+    transition: 0.4s;
+  }
+  /* ------------------------------------- */
+
+
+
+  @media (max-width: 768px) {
+    .logoContainer{
+      img{
+        width: 90px;
+      }
+    }
+    .navbardeskop{
+      display: none;
+    }
+    .mobilenav{
+      display: flex;
+    }
+    .hamburger{
+      display: block;
+      img{
+        width: 20px;
+      }
+    }
+    .linkList {
+      display: flex;
+      flex-direction: column; 
+      list-style: none;
+      background-color: #000000;
+      position: absolute; 
+      padding: 0;
+      top: 60px;
+      left: 60px;
+      backdrop-filter: blur(100px);
+      width: 100%;
+      z-index: 1000; /* Pastikan di atas elemen lain */
+      li{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: #ff8c00;
+      }
+    }
+    .linkList {
+      display: none; 
+      /* Sembunyikan link list di mobile */
+    }
+  
+    /* Menampilkan link list ketika menu aktif */
+    .linkList.active {
+      display: flex;
+    }
+
+    .themeMode{
+      width: 20px;
+    }
+  }

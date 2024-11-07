@@ -1,0 +1,143 @@
+.container {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerContainer {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--txt-color);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--txt-color);
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  background:var(--projectcard-bg);
+  background:var(--projectcard-bg-dark);
+}
+
+.projectCard {
+  
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+.viewButton {
+  padding: 0.8rem 1.5rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.viewButton:hover {
+  background: #0056b3;
+}
+
+.projectInfo {
+  padding: 1.5rem;
+  background:var(--projectcard-bg);
+  background:var(--projectcard-bg-dark);
+}
+
+.projectInfo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.3rem 0.8rem;
+  background: #f0f0f0;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    margin: 0 auto;
+  }
+
+  .viewButton {
+    padding: 0.5rem 1rem;
+  }
+}

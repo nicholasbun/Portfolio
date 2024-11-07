@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    p{
+        font-size: 16px;
+        color: var(--footer-txt-color);
+    }
+
+    span{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+
+
+
+        a{
+            margin: 0;
+            
+            
+            img{
+                width: 30px;
+
+            }
+        }
+
+        img{
+            transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+ 
