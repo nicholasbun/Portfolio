@@ -20,7 +20,7 @@ function About() {
           transition={{ duration: 1 }}
           viewport={{ once: false }}
         >
-          <img src="/src/assets/nicbun.png" alt="Profile me" />
+          <img src="/src/assets/logo.png" alt="Profile me" />
         </motion.div>
 
         <motion.div
