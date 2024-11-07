@@ -1,6 +1,5 @@
 import styles from "./aboutus.module.css";
 import { motion } from "framer-motion";
-// import { profileme } from "../../assets/nicbun.jpg";
 function About() {
   return (
     <section id="about" className={styles.container}>
@@ -20,7 +19,7 @@ function About() {
           transition={{ duration: 1 }}
           viewport={{ once: false }}
         >
-          <img src="/src/assets/logo.png" alt="Profile me" />
+          <img src="/public/nicbun.png" alt="Profile me" />
         </motion.div>
 
         <motion.div
