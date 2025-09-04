@@ -30,13 +30,15 @@ function About() {
           viewport={{ once: false }}
         >
           <p>
-            I am a student who is currently pursuing a Bachelor's degree in
-            Information Systems at Bina Nusantara University. <br />
+            As a dedicated Bachelor's student in Information Systems at the
+            esteemed Bina Nusantara University, I am passionate about expanding
+            my knowledge and honing my skills beyond the classroom.
             <br />
-            In addition to my studies, I actively seek opportunities to enhance
-            my knowledge and skills through internships, projects, seminars, and
-            organizational activities. I am a proactive learner and team player,
-            always eager to collaborate and contribute to innovative solutions.
+            <br />I consistently seek out internships, engage in impactful
+            projects, participate in insightful seminars, and actively
+            contribute to student organizations. My proactive learning approach
+            and collaborative spirit empower me to thrive in team environments,
+            driving innovation and delivering results in every endeavor.
           </p>
         </motion.div>
       </motion.div>
