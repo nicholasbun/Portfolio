@@ -27,7 +27,7 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 # Penjelasan Dukungan AI
 Dalam pengembangan proyek ini, saya menggunakan AI untuk membantu dalam beberapa aspek:
 - Rekomendasi Kode: AI memberikan saran untuk mengoptimalkan dan memperbaiki beberapa bagian kode, terutama pada bagian CSS dan struktur komponen React.
-- Pembuatan Konten: Saya menggunakan AI untuk menghasilkan teks deskriptif untuk bagian "Tentang Saya" dan deskripsi proyek, yang kemudian saya sesuaikan kembali.
+- Pembuatan Konten: Saya menggunakan AI untuk menghasilkan teks deskriptif untuk bagian "Tentang Saya" dan deskripsi proyek, yang kemudian saya sesuaikan kembali dengan keinginan saya.
 - Debugging: AI membantu saya dalam mengidentifikasi dan menyelesaikan beberapa bug kecil yang muncul selama proses pengembangan.
    
 # React + Vite
